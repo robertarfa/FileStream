@@ -38,7 +38,7 @@ partial class Program
 
             //Essa função vai avisar para o SO que o arquivo não está mais sendo
             //utilizado e assim podemos modificar o arquivo fora daqui
-            fluxoDoArquivo.Close();
+            //  fluxoDoArquivo.Close();
 
             Console.ReadLine();
         }
