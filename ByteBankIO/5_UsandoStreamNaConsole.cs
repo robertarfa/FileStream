@@ -9,9 +9,13 @@ partial class Program
         using (var fluxoDeEntrada = Console.OpenStandardInput())
         using (var fs = new FileStream("entradaConsole.txt", FileMode.Create))
         {
+
+            Console.WriteLine("Escreva seu nome:");
+            var nome = Console.ReadLine();
+            Console.WriteLine(nome);
             var buffer = new byte[1024];
 
-
+            //É isso que o Console.ReadLine() faz por baixo dos panos
             while (true)
             {
                 //armazena mais informações na console
